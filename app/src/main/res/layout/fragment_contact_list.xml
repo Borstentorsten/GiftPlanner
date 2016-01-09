@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pb.giftplanner.app.ContactListFragment">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="456dp"
+        android:id="@+id/listViewContactList"
+        android:layout_gravity="left|top"
+        android:choiceMode="multipleChoice"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Übernehmen"
+        android:id="@+id/btnContactListOk"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="Abbrechen"
+        android:id="@+id/btnContactListCancel"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_toStartOf="@+id/btnContactListOk"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnContactListOk"
+        android:layout_marginRight="127dp" />
+</RelativeLayout>
